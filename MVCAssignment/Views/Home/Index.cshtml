@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script>
+         $(document).ready(function () {
+             $('#LBbox').carousel({ interval: 2000 });
+         });
+</script>
+
+<div class="jumbotron">
+    <img src="~/Images/logo.gif" style="height:50px;margin-left:25px;margin-top:10px"/>
+    
+    <p class="lead" style="margin-left:30px;color:darkorange">ShowTime is a website which can help you find a lot of show information!</p>
+    <div id="LBbox" class="carousel slide" data-ride="carousel" style="width:1000px;align-content:center;margin:0 auto;text-align:center">
+        <!-- 圆点按钮 -->
+        <ol class="carousel-indicators">
+            <li data-target="#LBbox" data-slide-to="0"></li>
+            <li data-target="#LBbox" data-slide-to="1"></li>
+            <li data-target="#LBbox" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播内容 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Images/Coldplayposter.jpg" alt="1 slide">
+                <div class="carousel-caption" style="background-color:InfoText">
+                    <h3>Concert of ColdPlay</h3>
+                    <p>Location: Houston, TX,USA</p>
+                    <p>Date: Fri, 25 Aug 2017</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/slide2.png" alt="2 slide">
+                <div class="carousel-caption" style="background-color:InfoText">
+                    <h3>Concert of Maksim Mrvica</h3>
+                    <p>Location: Suzhou,China</p>
+                    <p>Date: Fri, 30 Aug 2017</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/slide3.png" alt="3 slide" >
+                <div class="carousel-caption" style="background-color:InfoText">
+                    <h3>Show of Berlin Philharmonic</h3>
+                    <p>Location: BeiJing, China</p>
+                    <p>Date: Fri, 30 Jan 2018</p>
+                </div>
+            </div>
+        </div>
+        <!-- 左按钮 -->
+        <a href="#LBbox" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Prev</span>
+        </a>
+        <!-- 右按钮 -->
+        <a href="#LBbox" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
