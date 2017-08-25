@@ -1,0 +1,26 @@
+﻿.head {
+    background-color: black;
+    height: 50px;
+    padding-left: 150px;
+}
+
+.head-menu {
+    margin-top: 5px;
+    float: left;
+}
+
+.topic {
+    /*align-content:center;*/
+    align-content: center;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+  
+}
+
+.body{
+    background-color: #F0EEF0;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}

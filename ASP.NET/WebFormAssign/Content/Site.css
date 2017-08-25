@@ -1,0 +1,294 @@
+﻿.head {
+    /*background-color: darkorange;
+    height: 50px;
+    padding-left: 200px;*/
+    align-content: center;
+    align-items: center;
+    background-color: darkorange;
+    text-align: center;
+    height: 50px;
+    padding-left: 150px;
+}
+
+.body {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logoutstyle{
+    color:aliceblue
+}
+.SiteMapPath {
+    background-color: white;
+    height: 30px;
+
+}
+.detailshow{
+    padding-left:20px;
+    padding-bottom:5px;
+    float:left;
+    text-align:left;
+}
+.site {
+    background-color: #F0EEF0
+}
+.theme {
+    float: right;
+    margin-top: auto;
+    padding-right: 108px;
+}
+.topic {
+    /*align-content:center;*/
+    align-content: center;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.topic-text{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.head-log{
+    float:left;
+
+}
+.head-menu{
+    margin-top:5px;
+    float:left;
+}
+.head-login {
+    /*float:right;
+    margin-right:230px;*/
+    float: left;
+    margin-top: auto;
+    padding-left: 95px;
+    display: flex;
+}
+
+.calender {
+    margin-left: 40px;
+    margin-top: 20px;
+    border: 1px solid darkorange;
+    width:auto;
+}
+.register {
+    margin-left: 20px;
+    border-left: darkorange solid 6px;
+    padding-left: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sitemap {
+    text-align:center;
+    margin-left: 20px;
+    border-left: darkorange solid 6px;
+    padding-left: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size:large;
+}
+.mainContentBox {
+    padding: 50px 110px 241px 380px;
+    display: block;
+    text-align:left;
+}
+.mainContentWrapper {
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    padding: 20px 23px 80px 23px;
+    font-family:Arial;
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 10pt;
+	text-align : justify;*/
+}
+.mainContent {
+    overflow-x: auto;
+    padding-left: 200px;
+    text-align: left;
+}
+
+.doc {
+    margin-left: 20px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    display: table-row-group;
+}
+.fieldHeader {
+    background-color: #DCDCDC;
+    font-size: 10pt;
+    font-weight: bold;
+    color: Blue;
+    vertical-align: top;
+    width: 70px;
+}
+
+
+
+.gvItems {
+    padding: 3;
+    font-family: Arial;
+    font-size: 8pt;
+    vertical-align: top;
+}
+
+.booksGrid {
+    width: 600px;
+}
+
+.booksHeader {
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    background-color: Bisque;
+    text-align: center
+}
+
+.booksRow {
+    vertical-align: top;
+}
+
+.booksAlternate {
+    vertical-align: top;
+    background-color: Cornsilk;
+}
+
+.bookLabel {
+    font-size: 14pt;
+    width: 800px;
+}
+
+.bookItem {
+    padding: 5;
+}
+
+
+.editBackColour {
+    background-color: Yellow;
+}
+
+.plantsGrid {
+    width: 600px;
+}
+
+.plantsHeader {
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    background-color: Bisque;
+    text-align: center
+}
+
+.plantsRow {
+    vertical-align: top;
+}
+
+.plantsAlternate {
+    vertical-align: top;
+    background-color: Cornsilk;
+}
+
+.plantPicture {
+    text-align: center;
+}
+
+.plantPrice {
+    text-align: right;
+}
+
+.plantsPager {
+    text-align: center;
+    font-weight: bold;
+}
+
+.customerGrid {
+    padding: 5;
+    border-color: black;
+    border-width: 1px;
+    font-size: 10pt;
+}
+
+.customerHeader {
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    background-color: #2f4660;
+    text-align: center;
+    padding: 5;
+}
+
+.customerRow {
+    vertical-align: top;
+    text-align: left;
+}
+
+.customerAlternate {
+    vertical-align: top;
+    background-color: #7C99BB;
+    text-align: left;
+}
+
+.emailTable {
+    padding: 5;
+    font-size: 10pt;
+    width: 95%;
+}
+
+.emailRow {
+    vertical-align: top;
+    text-align: left;
+}
+
+.emailHeader {
+    vertical-align: top;
+    background-color: #7C99BB;
+    text-align: left;
+    font-weight: bold;
+}
+
+.priorityList {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.error {
+    font-family: Arial;
+    font-size: 10pt;
+    color: red;
+}
+
+a:link {
+    color: #00468C
+}
+
+a:active {
+    color: green
+}
+
+a:visited {
+    color: black
+}
+
+.concert_content {
+    margin-left: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+

@@ -1,0 +1,38 @@
+﻿td.pref 
+{
+        font-weight: bolder;
+        font-size: 10pt;
+        color: black;
+        font-family: Arial;
+        background-color: #7C99BB
+    	}
+
+td.prefleft
+{
+        font-size: 10pt;
+        color: black;
+        font-family: Arial;
+        text-align:left;
+    	}
+
+.codeHeader
+{
+        font-family: "Arial";
+        color: "blue";
+}
+
+.pageHeader
+{
+        font-family: "Arial";
+        color: "black";
+}
+
+.code
+{
+        font-family: "Tahoma";
+        font-size: "10pt";
+        border:1px solid Black;
+        background:#D6E4F0;
+        padding:10px;
+        margin:20px;
+}

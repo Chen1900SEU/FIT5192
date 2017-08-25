@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Y&C ShowTime WebSite</title>
+    
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+ 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="Content/Site.css" type="text/css" />
+<link rel="stylesheet" href="Content/bootstrap.css" type="text/css" />
+
+
+</head>
+<body>
+    <form runat="server">
+        <div class="head">
+            <div class="head-log">
+                <asp:Image runat="server" Height="50px" ImageUrl="~/Images/logo.gif" Width="150px" />
+            </div>
+            <div class="head-menu">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource1" ForeColor="White" Height="40px" Font-Bold="false" Font-Size="Medium">
+                    <DynamicHoverStyle BackColor="#FF3300" />
+                    <DynamicMenuItemStyle HorizontalPadding="20px" ItemSpacing="10px" VerticalPadding="5px" />
+                    <LevelMenuItemStyles>
+                        <asp:MenuItemStyle Font-Underline="False" />
+                        <asp:MenuItemStyle BackColor="DarkOrange" Font-Underline="False" />
+                    </LevelMenuItemStyles>
+                    <StaticMenuItemStyle HorizontalPadding="20px" ItemSpacing="20px" />
+                    <StaticMenuStyle HorizontalPadding="20px" VerticalPadding="12px" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+
+            </div>
+            
+           <div class="head-login">
+                <asp:LoginView runat="server" ViewStateMode="Disabled" >
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right" >                            
+                                <li><a runat="server" href="~/Account/Login.aspx" style="color:aliceblue;font-size:medium"><strong>Log in</strong></a></li>
+                            </ul>
+                        </AnonymousTemplate>
+
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" style="color:aliceblue">Hello!<asp:LoginName runat="server" CssClass="username" /></a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" CssClass="logoutstyle" LogoutAction="Redirect" LogoutText="Log out"  Font-Bold="true" LogoutPageUrl="~/"/>
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+
+                 </asp:LoginView>
+            </div>
+
+<%--            <div class="head-login">
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Login.aspx">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>Hello!<asp:LoginName runat="server" CssClass="username" /></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log out" LogoutPageUrl="~/"/>
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                 </asp:LoginView>
+            </div>--%>
+        </div>
+
+        <div class="container">
+        
+        <div class="row" style="height:30px;line-height:30px">
+             <asp:DropDownList ID="ThemeDropDownList" runat="server"  >
+                <asp:ListItem>Default</asp:ListItem>
+                <asp:ListItem>Black</asp:ListItem>
+                <asp:ListItem>Blue</asp:ListItem>
+            </asp:DropDownList>
+
+            <asp:Button ID="Button1" runat="server" Text="Change Theme" OnClick="Button1_Click"  style="margin-top:2px;font-family:Arial;text-align:right;height:26px"/>
+            
+            <div class="col-md-7" style="float:left">
+              <asp:SiteMapPath  CssClass="SiteMapPath" ForeColor="#FF8A15" Font-Size="1.0em"  runat="server" Font-Names="Verdana" PathSeparator=" >>" >
+                <CurrentNodeStyle ForeColor="#616161" />
+                <NodeStyle Font-Bold="True" ForeColor="darkorange" />
+                <PathSeparatorStyle Font-Bold="True" ForeColor="darkorange" />
+                <RootNodeStyle Font-Bold="True" ForeColor="darkorange" />
+            </asp:SiteMapPath>
+            </div>
+        </div>
+       
+        </div>
+<%--        <div>
+            <asp:SiteMapPath runat="server"/>
+        </div>--%>
+
+
+        <div class="body">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <asp:ContentPlaceHolder ID="Footer" runat="server">
+                </asp:ContentPlaceHolder>
+            </footer>
+        </div>
+    </form>
+    </body>
+</html>
